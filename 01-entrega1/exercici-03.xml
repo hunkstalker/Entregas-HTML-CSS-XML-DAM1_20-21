@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facturacio>
+    <factura codi="" data_emisio="">
+        <dni></dni>
+        <nom></nom>
+        <adreca></adreca>
+        <codi_postal></codi_postal>
+        <poblacio></poblacio>
+        <productes>
+            <producte>
+                <iva unitat="%"></iva>
+                <denominacio></denominacio>
+                <quantitat></quantitat>
+                <preu unitat="€"></preu>
+                <descompte unitat="%">0</descompte>
+            </producte>
+        </productes>
+    </factura>
+</facturacio>

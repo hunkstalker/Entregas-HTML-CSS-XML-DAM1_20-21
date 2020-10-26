@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ciutats>
+    <ciutat continent="Europa">
+        <nom>Madrid</nom>
+        <pais>España</pais>
+    </ciutat>
+    <ciutat>
+        <ciutat continent="Àsia">
+            <nom>Wuhan</nom>
+            <pais>Xina</pais>
+        </ciutat>
+    </ciutat>
+    <ciutat>
+        <ciutat continent="Amèrica">
+            <nom>New York</nom>
+            <pais>EEUU</pais>
+        </ciutat>
+    </ciutat>
+</ciutats>

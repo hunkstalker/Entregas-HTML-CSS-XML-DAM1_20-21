@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prestecs>
+    <llibre codi_isbn="0001">
+        <nom></nom>
+        <editorial></editorial>
+        <any_publicacio></any_publicacio>
+        <autor></autor>
+        <prestec codi_exemplar="" data="">
+            <soci>
+                <dni></dni>
+                <adreca></adreca>
+            </soci>
+        </prestec>
+    </llibre>
+</prestecs>

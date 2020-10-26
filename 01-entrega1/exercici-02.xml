@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meteo>
+    <ciutat nom="Reus" data="2012-09-30">
+        <precipitació unitat="%">55</precipitació>
+        <cel>Intervals nuvolosos</cel>
+        <vent>
+            <direccio>Sud-oest</direccio>
+            <velocitat unitat="Km/h">10</velocitat>
+        </vent>
+        <temperatura>
+            <max unitat="ºC">21</max>
+            <min unitat="ºC">10</min>
+            <sensacio_max unitat="ºC">21</sensacio_max>
+            <sensacio_min unitat="ºC">10</sensacio_min>
+        </temperatura>
+        <humitat_relativa>
+            <max unitat="%">90%</max>
+            <min unitat="%">50%</min>
+        </humitat_relativa>
+        <precipitació unitat="index">3</precipitació>
+    </ciutat>
+</meteo>

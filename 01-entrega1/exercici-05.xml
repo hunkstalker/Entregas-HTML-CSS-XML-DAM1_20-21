@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./estil.css" type="text/css"?>
+<mobles>
+    <moble>
+        <nom>sofa</nom>
+        <preu unitat="€">642</preu>
+    </moble>
+    <moble>
+        <nom>sofa</nom>
+        <preu unitat="€">305</preu>
+    </moble>
+    <moble>
+        <nom>sofa</nom>
+        <preu unitat="€">89</preu>
+    </moble>
+</mobles>
