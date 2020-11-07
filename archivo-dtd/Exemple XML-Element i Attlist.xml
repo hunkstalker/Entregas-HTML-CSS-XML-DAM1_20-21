@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona [
+    <!ENTITY joan SYSTEM "joan.jpg">
+    <!NOTATION JPG SYSTEM "image/jpeg">
+    <!NOTATION PNG SYSTEM "image/png">
+    <!ELEMENT persona (nom, cognom, cognom?,familiar?,foto?)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT cognom (#PCDATA)>
+    <!ELEMENT familiar (#PCDATA)>
+    <!ELEMENT foto (#PCDATA)>
+    <!ATTLIST persona id ID #REQUIRED>
+    <!ATTLIST persona dni NMTOKEN #IMPLIED>
+    <!ATTLIST persona rol (professor|alumne) "alumne">
+    <!ATTLIST nom alies CDATA #IMPLIED>
+    <!ATTLIST foto format NOTATION (JPG|PNG) #IMPLIED>
+    <!ATTLIST foto arxiu ENTITY #IMPLIED>
+]>
+<persona id="A000001" dni="12345678A" rol="professor">
+    <nom alies="Juanmi">Joan Maria</nom>
+    <cognom>Pou</cognom>
+    <foto format="JPG" arxiu="joan">e1VuNF9mMHQwXzBfcXUzXzM1cDNyNHYzc30=</foto>
+</persona>

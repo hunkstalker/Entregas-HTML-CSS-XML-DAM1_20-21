@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comanda SYSTEM "./comanda.dtd">
+<comanda numero="26" dia="2020-11-01">
+	<client codi="20">
+		<nom>Billy</nom>
+		<cognom>Elliott</cognom>
+	</client>
+	<articles>
+		<article>
+			<descripció>Sabates de ballarina</descripció>
+			<quantitat>2</quantitat>
+			<preu>99,95</preu>
+		</article>
+		<article>
+			<descripció>Funda per Iphone</descripció>
+			<quantitat>1</quantitat>
+			<preu>19,95</preu>
+		</article>
+	</articles>
+	<total valor="219,85" />
+</comanda>

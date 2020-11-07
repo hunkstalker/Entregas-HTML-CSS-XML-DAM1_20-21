@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comanda [
+    <!ELEMENT comanda (client, articles, total)>
+    <!ELEMENT client (nom, cognom)>
+    <!ELEMENT nom (PCDATA)>
+    <!ELEMENT cognom (PCDATA)>
+    <!ELEMENT articles (article)>
+    <!ELEMENT article (descripcio, quantitat, preu)>
+    <!ELEMENT descripcio (#PCDATA)>
+    <!ELEMENT quantitat (#PCDATA)>
+    <!ELEMENT preu (#PCDATA)>
+    <!ELEMENT total valor NMTOKEN #IMPLIED>
+
+    <!ATTLIST comanda numero NMTOKEN dia NMTOKEN>
+    <!ATTLIST client codi NMTOKEN #IMPLIED>
+    <!ATTLIST nom CDATA #IMPLIED>
+    <!ATTLIST cognom CDATA #IMPLIED>
+    <!ATTLIST descripcio CDATA #IMPLIED>
+    <!ATTLIST quantitat CDATA #IMPLIED>
+    <!ATTLIST preu CDATA #IMPLIED>
+    <!ATTLIST total valor NMTOKEN #IMPLIED>
+]>
