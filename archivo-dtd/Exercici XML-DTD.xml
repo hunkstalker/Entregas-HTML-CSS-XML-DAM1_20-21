@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE comanda SYSTEM "./comanda.dtd">
+<!DOCTYPE comanda SYSTEM "https://github.com/hunkstalker/Entregas-HTML-CSS-XML-DAM1_20-21/blob/main/archivo-dtd/comanda.dtd">
 <comanda numero="26" dia="2020-11-01">
 	<client codi="20">
 		<nom>Billy</nom>

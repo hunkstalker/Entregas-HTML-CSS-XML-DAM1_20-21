@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE comanda [
-    <!ELEMENT comanda (client, articles, total)>
-    <!ELEMENT client (nom, cognom)>
-    <!ELEMENT nom (PCDATA)>
-    <!ELEMENT cognom (PCDATA)>
-    <!ELEMENT articles (article)>
-    <!ELEMENT article (descripcio, quantitat, preu)>
-    <!ELEMENT descripcio (#PCDATA)>
-    <!ELEMENT quantitat (#PCDATA)>
-    <!ELEMENT preu (#PCDATA)>
-    <!ELEMENT total valor NMTOKEN #IMPLIED>
+<!ELEMENT comanda (client, articles, total)>
+<!ELEMENT client (nom, cognom)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT articles (article+)>
+<!ELEMENT article (descripcio, quantitat, preu)>
+<!ELEMENT descripcio (#PCDATA)>
+<!ELEMENT quantitat (#PCDATA)>
+<!ELEMENT preu (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
 
-    <!ATTLIST comanda numero NMTOKEN dia NMTOKEN>
-    <!ATTLIST client codi NMTOKEN #IMPLIED>
-    <!ATTLIST nom CDATA #IMPLIED>
-    <!ATTLIST cognom CDATA #IMPLIED>
-    <!ATTLIST descripcio CDATA #IMPLIED>
-    <!ATTLIST quantitat CDATA #IMPLIED>
-    <!ATTLIST preu CDATA #IMPLIED>
-    <!ATTLIST total valor NMTOKEN #IMPLIED>
+<!ATTLIST comanda numero CDATA #REQUIRED>
+<!ATTLIST comanda dia CDATA #REQUIRED>
+<!ATTLIST client codi ID #REQUIRED>
+<!ATTLIST total valor CDATA "0">
 ]>
+<!-- 
+<comanda numero="26" dia="2020-11-01">
+	<client codi="20">
+		<nom>Billy</nom>
+		<cognom>Elliott</cognom>
+	</client>
+	<articles>
+		<article>
+			<descripció>Sabates de ballarina</descripció>
+			<quantitat>2</quantitat>
+			<preu>99,95</preu>
+		</article>
+		<article>
+			<descripció>Funda per Iphone</descripció>
+			<quantitat>1</quantitat>
+			<preu>19,95</preu>
+		</article>
+	</articles>
+	<total valor="219,85" />
+</comanda>
+-->
