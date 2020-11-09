@@ -1,7 +1,11 @@
+<!-- Corregido -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE comanda [
 <!ELEMENT comanda (client, articles, total)>
+<!ATTLIST comanda numero NMTOKEN #REQUIRED>
+<!ATTLIST comanda dia NMTOKEN #REQUIRED>
 <!ELEMENT client (nom, cognom)>
+<!ATTLIST client codi NMTOKEN #REQUIRED>
 <!ELEMENT nom (#PCDATA)>
 <!ELEMENT cognom (#PCDATA)>
 <!ELEMENT articles (article+)>
@@ -9,14 +13,9 @@
 <!ELEMENT descripcio (#PCDATA)>
 <!ELEMENT quantitat (#PCDATA)>
 <!ELEMENT preu (#PCDATA)>
-<!ELEMENT total (#PCDATA)>
-
-<!ATTLIST comanda numero CDATA #REQUIRED>
-<!ATTLIST comanda dia CDATA #REQUIRED>
-<!ATTLIST client codi ID #REQUIRED>
-<!ATTLIST total valor CDATA "0">
+<!ELEMENT total EMPTY>
+<!ATTLIST total valor CDATA #REQUIRED>
 ]>
-<!-- 
 <comanda numero="26" dia="2020-11-01">
 	<client codi="20">
 		<nom>Billy</nom>
@@ -36,4 +35,23 @@
 	</articles>
 	<total valor="219,85" />
 </comanda>
+
+<!-- El que yo hice:
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comanda [
+<!ELEMENT comanda (client, articles, total)>
+<!ELEMENT client (nom, cognom)>
+<!ELEMENT nom (PCDATA)>
+<!ELEMENT cognom (PCDATA)>
+<!ELEMENT articles (article*)>
+<!ELEMENT article (descripcio, quantitat, preu)>
+<!ELEMENT descripcio (#PCDATA)>
+<!ELEMENT quantitat (#PCDATA)>
+<!ELEMENT preu (#PCDATA)>
+<!ATTLIST comanda numero CDATA #REQUIRED>
+<!ATTLIST comanda dia CDATA #REQUIRED>
+<!ATTLIST client codi ID #REQUIRED>
+<!ATTLIST total valor CDATA "0">
+]>
+
 -->
