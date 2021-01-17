@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Author Title="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="./exercici7.xsd">
+    <FirstName></FirstName>
+    <LastName></LastName>
+    <Age>1</Age>
+</Author>
